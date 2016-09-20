@@ -1,0 +1,60 @@
+
+<br>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+			<div class="jumbotron">
+
+				<div id="searchBox" class="well text-center">
+					<h1>{{searchController.heading}}</h1>
+					<br>
+					<div id="box" class="text-center">
+						<form ng-submit="searchController.getRepository()">
+							<input type="text" name="query" ng-model="searchController.query">
+							<input type="submit" name="">
+						</form>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+					    <h3>Total : {{searchController.total}}</h3>
+						<ul>
+							<div class="names" ng-repeat="repo in searchController.array">
+								<li>
+								<a href="https://api.github.com/repos/{{repo.owner.login}}/{{repo.name}}/issues">{{repo.name}}</a>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <nav aria-label="Page navigation">
+				  <ul class="pagination" >
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav> -->
+
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+</div>
+
