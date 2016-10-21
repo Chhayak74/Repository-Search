@@ -1,4 +1,7 @@
 # Repository-Search
-Angularjs project to search a repository , open issues and a few details.
+Angularjs project to search a repository , open issues and a few details. 
 
-Status : Ongoing
+Link - https://chhayak74.github.io/Repository-Search/
+
+Status : Ongoing 
+
